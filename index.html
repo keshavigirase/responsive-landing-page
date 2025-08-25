@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern responsive landing page with interactive navigation and animations">
+    <meta name="keywords" content="modern, responsive, landing page, interactive, animations">
+    <title>ModernLand - Professional Landing Page</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" aria-label="responsive-landing page Home">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    responsive-landing page
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#home" class="nav-link" role="menuitem" aria-label="Go to Home section">Home</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#about" class="nav-link" role="menuitem" aria-label="Go to About section">About</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#services" class="nav-link" role="menuitem" aria-label="Go to Services section">Services</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#features" class="nav-link" role="menuitem" aria-label="Go to Features section">Features</a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#contact" class="nav-link" role="menuitem" aria-label="Go to Contact section">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+            
+            <!-- Mobile Hamburger -->
+            <div class="hamburger" id="hamburger" aria-label="Toggle mobile menu" role="button" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="hero-container">
+            <div class="hero-content animate-fade-in">
+                <h1 class="hero-title">
+                    Build Amazing
+                    <span class="gradient-text">Digital Experiences</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Create stunning, responsive websites with modern design principles and cutting-edge technology. 
+                    Transform your ideas into reality with our professional solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" aria-label="Get started with our services">
+                        Get Started
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="#about" class="btn btn-secondary" aria-label="Learn more about us">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-slide-in">
+                <div class="hero-graphic">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-palette" aria-hidden="true"></i>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" role="main">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Our Mission</h2>
+                <p class="section-subtitle">
+                    We're passionate about creating digital experiences that make a difference
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card reveal-animation">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Cutting-edge solutions that push the boundaries of what's possible in web development.</p>
+                </div>
+                
+                <div class="about-card reveal-animation">
+                    <div class="card-icon">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Working closely with clients to understand their vision and bring it to life.</p>
+                </div>
+                
+                <div class="about-card reveal-animation">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p>Optimized, fast-loading websites that provide exceptional user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
+                    Comprehensive solutions for all your digital needs
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal-animation">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built with modern technologies and best practices for optimal performance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Responsive Design</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> SEO Optimized</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Fast Loading</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card reveal-animation">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive designs that enhance user experience and drive engagement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> User Research</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Wireframing</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Prototyping</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card reveal-animation">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategic marketing solutions to help your business grow and reach the right audience.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check" aria-hidden="true"></i> SEO Strategy</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Content Marketing</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">
+                    Features that set us apart from the competition
+                </p>
+            </div>
+            
+            <div class="features-content">
+                <div class="features-list">
+                    <div class="feature-item reveal-animation">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Lightning Fast</h3>
+                            <p>Optimized code and modern techniques ensure your site loads in milliseconds.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal-animation">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Secure & Reliable</h3>
+                            <p>Built with security best practices and reliable hosting solutions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal-animation">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Fully Customizable</h3>
+                            <p>Tailored solutions that perfectly match your brand and requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item reveal-animation">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>24/7 Support</h3>
+                            <p>Round-the-clock support to ensure your website runs smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="features-visual reveal-animation">
+                    <div class="visual-container">
+                        <div class="visual-card">
+                            <div class="card-header">
+                                <div class="card-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                                <div class="stats">
+                                    <div class="stat">
+                                        <span class="stat-number">99.9%</span>
+                                        <span class="stat-label">Uptime</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">0.5s</span>
+                                        <span class="stat-label">Load Time</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Ready to start your project? Let's discuss your ideas
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal-animation">
+                    <h3>Let's Connect</h3>
+                    <p>Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>hello@modernland.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>123 Innovation Street, Tech City, TC 12345</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form reveal-animation" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required aria-describedby="name-error">
+                        <span class="error-message" id="name-error" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error">
+                        <span class="error-message" id="email-error" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                        <span class="error-message" id="message-error" role="alert"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        ModernLand
+                    </div>
+                    <p>Creating amazing digital experiences that make a difference in the world.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                        <li><a href="#contact">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on our latest projects and insights.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter">
+                            <button type="submit" aria-label="Subscribe to newsletter">
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ModernLand. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
